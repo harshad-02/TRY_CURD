@@ -44,9 +44,6 @@ TRY_CURD/
 ├── package.json
 └── README.md
 
-yaml
-Copy code
-
 ---
 
 ## ⚙️ Installation & Setup
