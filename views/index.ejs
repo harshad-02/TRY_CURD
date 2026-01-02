@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<h1 class="title">TO DO LIST</h1>
+
+<h2>Incomplete</h2>
+<div class="todo-container">
+    <% for (let todo of todos) { %>
+        <% if (!todo.completed) { %>
+            <div class="todo-card incomplete">
+                <h3 class="todo-id"><%= todo.id %></h3>
+                <h4 class="todo-task"><%= todo.task %></h4>
+
+                <form action="/todos/<%= todo.id %>/complete" , method="POST">
+                    <button type="submit">Mark Completed</button>
+                </form>
+                <!--Update Task-->
+                <form action="/todos/<%=todo.id%>/edit" , method="GET">
+                    <button type="submit">Update Task</button>
+                </form>
+            </div>
+        <% } %>
+    <% } %>
+</div>
+
+
+<h2>Completed</h2>
+<div class="todo-container">
+    <% for (let todo of todos) { %>
+        <% if (todo.completed) { %>
+            <div class="todo-card completed">
+                <h3 class="todo-id"><%= todo.id %></h3>
+                <h4 class="todo-task"><%= todo.task %></h4>
+            </div>
+        <% } %>
+    <% } %>
+</div>
+
+
+<a href="/todos/new">Add New Task</a>
+</body>
+</html>

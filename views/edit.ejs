@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Todo</title>
+</head>
+<body>
+
+<h1>Edit Task</h1>
+
+<form action="/todos/<%= todo.id %>" method="POST">
+    <input 
+        type="text"
+        name="task"
+        value="<%= todo.task %>"
+        required
+    >
+    <button type="submit">Update</button>
+</form>
+
+<a href="/todos">Back</a>
+
+</body>
+</html>
