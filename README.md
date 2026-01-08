@@ -30,6 +30,8 @@ This project demonstrates **CRUD operations** using a **simulated in-memory data
 
 ## 📁 Project Structure
 
+```bash
+
 TRY_CURD/
 │
 ├── views/
@@ -44,12 +46,12 @@ TRY_CURD/
 ├── package.json
 └── README.md
 
----
+```
 
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the repository
-```bash
+
 git clone https://github.com/harshad-02/TRY_CURD.git
 2️⃣ Go to project folder
 bash
@@ -102,8 +104,6 @@ Don’t forget to star ⭐ the repository!
 
 Happy Coding 🚀
 
-yaml
-Copy code
 
 ---
 
